@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <script type="text/javascript">
+    function selecionar(link) {
+        var links = document.getElementsByTagName("a");
+        
+        for (var i = 0; i < links.length; i++) {
+            var fontTag = links[i].getElementsByTagName("font")[0];
+            fontTag.setAttribute("size", "5");
+            fontTag.setAttribute("color", "#099990");
+        }
+
+        var fontAtivo = link.getElementsByTagName("font")[0];
+        fontAtivo.setAttribute("color", "#ff3300");
+    }
+  </script>
+</head>
+<body text="#099990" bgcolor="none">
+
+    <br><br><br>
+
+    <center>
+        <img src="../IMAGE/logo.png" alt="Logo São Gabriel Automecânica" height="70">
+    </center>
+
+    <br>
+
+    <center>
+    <table border="0" width="100%">
+        <tr>
+            <td align="center" width="15%">
+                <a href="equipment.html" target="body" onclick="selecionar(this)">
+                    <font size="5" color="#099990"><b>EQUIPAMENTOS</b></font>
+                </a>
+            </td>
+            <td align="center" width="15%">
+                <a href="price.html" target="body" onclick="selecionar(this)">
+                    <font size="5" color="#099990"><b>PREÇOS</b></font>
+                </a>
+            </td>
+            <td align="center" width="15%">
+                <a href="locate.html" target="body" onclick="selecionar(this)">
+                    <font size="5" color="#099990"><b>LOCALIZAÇÃO</b></font>
+                </a>
+            </td>
+            <td align="center" width="15%">
+                <a href="team.html" target="body" onclick="selecionar(this)">
+                    <font size="5" color="#099990"><b>NOSSA EQUIPE</b></font>
+                </a>
+            </td>
+            <td align="center" width="15%">
+                <a href="history.html" target="body" onclick="selecionar(this)">
+                    <font size="5" color="#099990"><b>NOSSA HISTÓRIA</b></font>
+                </a>
+            </td>
+        </tr>
+    </table>
+    </center>
+
+</body>
+</html>
